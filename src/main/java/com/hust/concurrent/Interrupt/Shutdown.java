@@ -1,7 +1,7 @@
 package com.hust.concurrent.Interrupt;
 
 /**
- * 用过标识位来动态改变  P95
+ * 用标识位来动态改变  P95
  */
 public class Shutdown {
 

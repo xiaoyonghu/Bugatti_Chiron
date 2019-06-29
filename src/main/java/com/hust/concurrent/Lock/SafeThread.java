@@ -1,13 +1,14 @@
-package com.hust.concurrent.sysopsis;
+package com.hust.concurrent.Lock;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class UnsafeThread {
+public class SafeThread {
     private  static int num=0;
     private static CountDownLatch countDownLatch=new CountDownLatch(10);
    private static Lock lock=new ReentrantLock();
+   // private static Lock lock=new MyLock();
 
    //1.方法加上synchronized
     //2.用java提供的原子包

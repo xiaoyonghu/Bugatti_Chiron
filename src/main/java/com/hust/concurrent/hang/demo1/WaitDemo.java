@@ -6,7 +6,7 @@ package com.hust.concurrent.hang.demo1;
 public class WaitDemo implements Runnable{
 
     private static Object object=new Object(); //一个对象可以有多个相关的条件锁，
-                                               // 并且每个条件锁有一个可持有数(原来统计某一条件锁的持有数)
+                                               // 并且每个条件锁有一个可持有数(用来统计某一条件锁的持有数)
     @Override
     public void run() {
         synchronized (object){
